@@ -1,8 +1,12 @@
-export const Header = () =>{
-    return (
-        <header>
-            <h1>Olha! um componente!</h1>
-        </header>
-    )
-}
+type Props = {
+  name: string;
+  age: number;
+};
 
+export const Header = ({ name, age}: Props) => {
+  return (
+    <header>
+      <h1>Olá {name}, tudo bem? {age}</h1>
+    </header>
+  );
+};
